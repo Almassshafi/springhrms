@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -16,6 +18,11 @@ public class Location {
     @Column(name = "location_id")
     private int locationId;
 
+    @ManyToOne
+    @JoinColumn(name = "country_id")
+    private Country country;
+
+    
     @Column(name = "street_address")
     private String streetAddress;
 
