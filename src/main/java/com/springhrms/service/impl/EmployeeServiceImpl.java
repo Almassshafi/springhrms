@@ -1,17 +1,21 @@
-package com.springhrms.dao.impl;
+package com.springhrms.service.impl;
 
 import com.springhrms.dao.EmployeeDAO;
 import com.springhrms.model.Employee;
+import com.springhrms.service.EmployeeService;
 import java.util.List;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
-@Repository
-public class EmployeeDAOImpl implements EmployeeDAO {
+/**
+ *
+ * @author Manish gour
+ */
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
-    private SessionFactory sessionFactory;
+    EmployeeDAO employeeDAO;
 
     @Override
     public long createEmployee(Employee employee) {
@@ -30,7 +34,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public List<Employee> getAllEmployees() {
-        return (List<Employee>) sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
+        return employeeDAO.getAllEmployees();
     }
 
     @Override
