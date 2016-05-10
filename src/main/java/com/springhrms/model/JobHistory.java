@@ -18,27 +18,27 @@ import org.hibernate.annotations.Parameter;
 public class JobHistory {
 
     @Id
-    @Column(name="employee_id", unique=true, nullable=false)
-    @GeneratedValue(generator="gen")
-    @GenericGenerator(name="gen", strategy="foreign", parameters=@Parameter(name="property", value="employee"))
-	private int employeeId;
+    @Column(name = "employee_id", unique = true, nullable = false)
+    @GeneratedValue(generator = "gen")
+    @GenericGenerator(name = "gen", strategy = "foreign", parameters = @Parameter(name = "property", value = "employee"))
+    private long employeeId;
 
     @OneToOne
     @PrimaryKeyJoinColumn
     private Employee employee;
-    
-	@ManyToOne
-	@JoinColumn(name = "job_id")
-	private Job job;
 
-	@ManyToOne
-	@JoinColumn(name = "department_id")
-	private Department department;
+    @ManyToOne
+    @JoinColumn(name = "job_id")
+    private Job job;
 
-	@Column(name = "start_date")
-	private Date startDate;
+    @ManyToOne
+    @JoinColumn(name = "department_id")
+    private Department department;
 
-	@Column(name = "end_date")
-	private Date endDate;
+    @Column(name = "start_date")
+    private Date startDate;
+
+    @Column(name = "end_date")
+    private Date endDate;
 
 }

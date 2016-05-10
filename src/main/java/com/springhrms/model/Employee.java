@@ -14,7 +14,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 
@@ -25,7 +24,7 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "employee_id")
-	private int employeeId;
+	private long employeeId;
 
 	@OneToMany(mappedBy = "manager", cascade = CascadeType.ALL)
 	private Set<Department> departments;
@@ -39,7 +38,7 @@ public class Employee {
 	private Job job;
 	
 	@ManyToOne(cascade = { CascadeType.ALL })
-	@JoinColumn(name = "manager_id")
+	@JoinColumn(name = "manager_id",nullable = true)
 	private Employee manager;
 
 	@OneToMany(mappedBy = "manager")

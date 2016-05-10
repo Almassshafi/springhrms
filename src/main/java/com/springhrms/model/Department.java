@@ -19,23 +19,23 @@ public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="department_id")
-    private int departmentId;
+    @Column(name = "department_id")
+    private long departmentId;
 
-	@ManyToOne
-	@JoinColumn(name = "location_id")
-	private Location location;
+    @ManyToOne
+    @JoinColumn(name = "location_id")
+    private Location location;
 
-	@ManyToOne
-	@JoinColumn(name = "manager_id")
-	private Employee manager;
+    @ManyToOne
+    @JoinColumn(name = "manager_id")
+    private Employee manager;
 
-    @Column(name="department_name")
+    @Column(name = "department_name")
     private String departmentName;
 
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
-	private Set<Employee> employees;
-    
+    private Set<Employee> employees;
+
     @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
-	private Set<JobHistory> jobhistories;
+    private Set<JobHistory> jobhistories;
 }

@@ -1,26 +1,21 @@
 package com.springhrms.model;
 
-import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
 
 @Entity
 @Table(name = "jobs")
 public class Job {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "job_id")
-	private int jobId;
+        @Id
+        @Column(name = "job_id", unique = true, nullable = false)
+        private String jobId;
 
 	@Column(name = "job_title")
 	private String jobTitle;

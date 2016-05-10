@@ -1,201 +1,174 @@
+-- SET FOREIGN_KEY_CHECKS = 1;
+
 USE hr;
 
-INSERT INTO regions
-VALUES (
+INSERT INTO regions  (`region_id`,`region_name`) VALUES (
 	1,
 	'Europe'
 	);
 
-INSERT INTO regions
-VALUES (
+INSERT INTO regions  (`region_id`,`region_name`) VALUES (
 	2,
 	'Americas'
 	);
 
-INSERT INTO regions
-VALUES (
+INSERT INTO regions  (`region_id`,`region_name`) VALUES (
 	3,
 	'Asia'
 	);
 
-INSERT INTO regions
-VALUES (
+INSERT INTO regions  (`region_id`,`region_name`) VALUES (
 	4,
 	'Middle East and Africa'
 	);
 
 COMMIT;
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'IT',
 	'Italy',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'JP',
 	'Japan',
 	3
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'US',
 	'United States of America',
 	2
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'CA',
 	'Canada',
 	2
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'CN',
 	'China',
 	3
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'IN',
 	'India',
 	3
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'AU',
 	'Australia',
 	3
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'ZW',
 	'Zimbabwe',
 	4
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'SG',
 	'Singapore',
 	3
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'UK',
 	'United Kingdom',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'FR',
 	'France',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'DE',
 	'Germany',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'ZM',
 	'Zambia',
 	4
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'EG',
 	'Egypt',
 	4
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'BR',
 	'Brazil',
 	2
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'CH',
 	'Switzerland',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'NL',
 	'Netherlands',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'MX',
 	'Mexico',
 	2
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'KW',
 	'Kuwait',
 	4
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'IL',
 	'Israel',
 	4
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'DK',
 	'Denmark',
 	1
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'HK',
 	'HongKong',
 	3
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'NG',
 	'Nigeria',
 	4
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'AR',
 	'Argentina',
 	2
 	);
 
-INSERT INTO countries
-VALUES (
+INSERT INTO countries (`country_id`,`country_name`,`region_id`) VALUES (
 	'BE',
 	'Belgium',
 	1
@@ -203,8 +176,7 @@ VALUES (
 
 COMMIT;
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1000,
 	'1297 Via Cola di Rie',
 	'00989',
@@ -213,8 +185,7 @@ VALUES (
 	'IT'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1100,
 	'93091 Calle della Testa',
 	'10934',
@@ -223,8 +194,7 @@ VALUES (
 	'IT'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1200,
 	'2017 Shinjuku-ku',
 	'1689',
@@ -233,8 +203,7 @@ VALUES (
 	'JP'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1300,
 	'9450 Kamiya-cho',
 	'6823',
@@ -243,8 +212,7 @@ VALUES (
 	'JP'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1400,
 	'2014 Jabberwocky Rd',
 	'26192',
@@ -253,8 +221,7 @@ VALUES (
 	'US'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1500,
 	'2011 Interiors Blvd',
 	'99236',
@@ -263,8 +230,7 @@ VALUES (
 	'US'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1600,
 	'2007 Zagora St',
 	'50090',
@@ -273,8 +239,7 @@ VALUES (
 	'US'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1700,
 	'2004 Charade Rd',
 	'98199',
@@ -283,8 +248,7 @@ VALUES (
 	'US'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1800,
 	'147 Spadina Ave',
 	'M5V 2L7',
@@ -293,8 +257,7 @@ VALUES (
 	'CA'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	1900,
 	'6092 Boxwood St',
 	'YSW 9T2',
@@ -303,8 +266,7 @@ VALUES (
 	'CA'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2000,
 	'40-5-12 Laogianggen',
 	'190518',
@@ -313,8 +275,7 @@ VALUES (
 	'CN'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2100,
 	'1298 Vileparle (E)',
 	'490231',
@@ -323,8 +284,7 @@ VALUES (
 	'IN'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2200,
 	'12-98 Victoria Street',
 	'2901',
@@ -333,8 +293,7 @@ VALUES (
 	'AU'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2300,
 	'198 Clementi North',
 	'540198',
@@ -343,8 +302,7 @@ VALUES (
 	'SG'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2400,
 	'8204 Arthur St',
 	NULL,
@@ -353,8 +311,7 @@ VALUES (
 	'UK'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2500,
 	'Magdalen Centre, The Oxford Science Park',
 	'OX9 9ZB',
@@ -363,8 +320,7 @@ VALUES (
 	'UK'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2600,
 	'9702 Chester Road',
 	'09629850293',
@@ -373,8 +329,7 @@ VALUES (
 	'UK'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2700,
 	'Schwanthalerstr. 7031',
 	'80925',
@@ -383,8 +338,7 @@ VALUES (
 	'DE'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2800,
 	'Rua Frei Caneca 1360 ',
 	'01307-002',
@@ -393,8 +347,7 @@ VALUES (
 	'BR'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	2900,
 	'20 Rue des Corps-Saints',
 	'1730',
@@ -403,8 +356,7 @@ VALUES (
 	'CH'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	3000,
 	'Murtenstrasse 921',
 	'3095',
@@ -413,8 +365,7 @@ VALUES (
 	'CH'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	3100,
 	'Pieter Breughelstraat 837',
 	'3029SK',
@@ -423,8 +374,7 @@ VALUES (
 	'NL'
 	);
 
-INSERT INTO locations
-VALUES (
+INSERT INTO locations (`location_id`, `city`, `postal_code`, `state_province`, `street_address`, `country_id`) VALUES (
 	3200,
 	'Mariano Escobedo 9991',
 	'11932',
@@ -437,372 +387,326 @@ COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
-INSERT INTO departments
-VALUES (
+
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	10,
 	'Administration',
 	200,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	20,
 	'Marketing',
 	201,
 	1800
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	30,
 	'Purchasing',
 	114,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	40,
 	'Human Resources',
 	203,
 	2400
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	50,
 	'Shipping',
 	121,
 	1500
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	60,
 	'IT',
 	103,
 	1400
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	70,
 	'Public Relations',
 	204,
 	2700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	80,
 	'Sales',
 	145,
 	2500
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	90,
 	'Executive',
 	100,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	100,
 	'Finance',
 	108,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	110,
 	'Accounting',
 	205,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	120,
 	'Treasury',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	130,
 	'Corporate Tax',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	140,
 	'Control And Credit',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	150,
 	'Shareholder Services',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	160,
 	'Benefits',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	170,
 	'Manufacturing',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	180,
 	'Construction',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	190,
 	'Contracting',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	200,
 	'Operations',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	210,
 	'IT Support',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	220,
 	'NOC',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	230,
 	'IT Helpdesk',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	240,
 	'Government Sales',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	250,
 	'Retail Sales',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	260,
 	'Recruiting',
 	NULL,
 	1700
 	);
 
-INSERT INTO departments
-VALUES (
+INSERT INTO departments (`department_id`, `department_name`, `manager_id`, `location_id`) VALUES (
 	270,
 	'Payroll',
 	NULL,
 	1700
 	);
 
-SET FOREIGN_KEY_CHECKS = 1;
 
 COMMIT;
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'AD_PRES',
 	'President',
 	20000,
 	40000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'AD_VP',
 	'Administration Vice President',
 	15000,
 	30000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'AD_ASST',
 	'Administration Assistant',
 	3000,
 	6000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'FI_MGR',
 	'Finance Manager',
 	8200,
 	16000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'FI_ACCOUNT',
 	'Accountant',
 	4200,
 	9000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'AC_MGR',
 	'Accounting Manager',
 	8200,
 	16000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'AC_ACCOUNT',
 	'Public Accountant',
 	4200,
 	9000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'SA_MAN',
 	'Sales Manager',
 	10000,
 	20000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'SA_REP',
 	'Sales Representative',
 	6000,
 	12000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'PU_MAN',
 	'Purchasing Manager',
 	8000,
 	15000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'PU_CLERK',
 	'Purchasing Clerk',
 	2500,
 	5500
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'ST_MAN',
 	'Stock Manager',
 	5500,
 	8500
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'ST_CLERK',
 	'Stock Clerk',
 	2000,
 	5000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'SH_CLERK',
 	'Shipping Clerk',
 	2500,
 	5500
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'IT_PROG',
 	'Programmer',
 	4000,
 	10000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'MK_MAN',
 	'Marketing Manager',
 	9000,
 	15000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'MK_REP',
 	'Marketing Representative',
 	4000,
 	9000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'HR_REP',
 	'Human Resources Representative',
 	4000,
 	9000
 	);
 
-INSERT INTO jobs
-VALUES (
+INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	'PR_REP',
 	'Public Relations Representative',
 	4500,
@@ -811,8 +715,7 @@ VALUES (
 
 COMMIT;
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	100,
 	'Steven',
 	'King',
@@ -826,8 +729,7 @@ VALUES (
 	90
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	101,
 	'Neena',
 	'Kochhar',
@@ -841,8 +743,7 @@ VALUES (
 	90
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	102,
 	'Lex',
 	'De Haan',
@@ -856,8 +757,7 @@ VALUES (
 	90
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	103,
 	'Alexander',
 	'Hunold',
@@ -871,8 +771,7 @@ VALUES (
 	60
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	104,
 	'Bruce',
 	'Ernst',
@@ -886,8 +785,7 @@ VALUES (
 	60
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	105,
 	'David',
 	'Austin',
@@ -901,8 +799,7 @@ VALUES (
 	60
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	106,
 	'Valli',
 	'Pataballa',
@@ -916,8 +813,7 @@ VALUES (
 	60
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	107,
 	'Diana',
 	'Lorentz',
@@ -931,8 +827,7 @@ VALUES (
 	60
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	108,
 	'Nancy',
 	'Greenberg',
@@ -946,8 +841,7 @@ VALUES (
 	100
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	109,
 	'Daniel',
 	'Faviet',
@@ -961,8 +855,7 @@ VALUES (
 	100
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	110,
 	'John',
 	'Chen',
@@ -976,8 +869,7 @@ VALUES (
 	100
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	111,
 	'Ismael',
 	'Sciarra',
@@ -991,8 +883,7 @@ VALUES (
 	100
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	112,
 	'Jose Manuel',
 	'Urman',
@@ -1006,8 +897,7 @@ VALUES (
 	100
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	113,
 	'Luis',
 	'Popp',
@@ -1021,8 +911,7 @@ VALUES (
 	100
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	114,
 	'Den',
 	'Raphaely',
@@ -1036,8 +925,7 @@ VALUES (
 	30
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	115,
 	'Alexander',
 	'Khoo',
@@ -1051,8 +939,7 @@ VALUES (
 	30
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	116,
 	'Shelli',
 	'Baida',
@@ -1066,8 +953,7 @@ VALUES (
 	30
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	117,
 	'Sigal',
 	'Tobias',
@@ -1081,8 +967,7 @@ VALUES (
 	30
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	118,
 	'Guy',
 	'Himuro',
@@ -1096,8 +981,7 @@ VALUES (
 	30
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	119,
 	'Karen',
 	'Colmenares',
@@ -1111,8 +995,7 @@ VALUES (
 	30
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	120,
 	'Matthew',
 	'Weiss',
@@ -1126,8 +1009,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	121,
 	'Adam',
 	'Fripp',
@@ -1141,8 +1023,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	122,
 	'Payam',
 	'Kaufling',
@@ -1156,8 +1037,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	123,
 	'Shanta',
 	'Vollman',
@@ -1171,8 +1051,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	124,
 	'Kevin',
 	'Mourgos',
@@ -1186,8 +1065,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	125,
 	'Julia',
 	'Nayer',
@@ -1201,8 +1079,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	126,
 	'Irene',
 	'Mikkilineni',
@@ -1216,8 +1093,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	127,
 	'James',
 	'Landry',
@@ -1231,8 +1107,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	128,
 	'Steven',
 	'Markle',
@@ -1246,8 +1121,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	129,
 	'Laura',
 	'Bissot',
@@ -1261,8 +1135,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	130,
 	'Mozhe',
 	'Atkinson',
@@ -1276,8 +1149,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	131,
 	'James',
 	'Marlow',
@@ -1291,8 +1163,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	132,
 	'TJ',
 	'Olson',
@@ -1306,8 +1177,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	133,
 	'Jason',
 	'Mallin',
@@ -1321,8 +1191,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	134,
 	'Michael',
 	'Rogers',
@@ -1336,8 +1205,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	135,
 	'Ki',
 	'Gee',
@@ -1351,8 +1219,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	136,
 	'Hazel',
 	'Philtanker',
@@ -1366,8 +1233,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	137,
 	'Renske',
 	'Ladwig',
@@ -1381,8 +1247,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	138,
 	'Stephen',
 	'Stiles',
@@ -1396,8 +1261,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	139,
 	'John',
 	'Seo',
@@ -1411,8 +1275,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	140,
 	'Joshua',
 	'Patel',
@@ -1426,8 +1289,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	141,
 	'Trenna',
 	'Rajs',
@@ -1441,8 +1303,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	142,
 	'Curtis',
 	'Davies',
@@ -1456,8 +1317,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	143,
 	'Randall',
 	'Matos',
@@ -1471,8 +1331,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	144,
 	'Peter',
 	'Vargas',
@@ -1486,8 +1345,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	145,
 	'John',
 	'Russell',
@@ -1501,8 +1359,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	146,
 	'Karen',
 	'Partners',
@@ -1516,8 +1373,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	147,
 	'Alberto',
 	'Errazuriz',
@@ -1531,8 +1387,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	148,
 	'Gerald',
 	'Cambrault',
@@ -1546,8 +1401,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	149,
 	'Eleni',
 	'Zlotkey',
@@ -1561,8 +1415,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	150,
 	'Peter',
 	'Tucker',
@@ -1576,8 +1429,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	151,
 	'David',
 	'Bernstein',
@@ -1591,8 +1443,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	152,
 	'Peter',
 	'Hall',
@@ -1606,8 +1457,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	153,
 	'Christopher',
 	'Olsen',
@@ -1621,8 +1471,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	154,
 	'Nanette',
 	'Cambrault',
@@ -1636,8 +1485,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	155,
 	'Oliver',
 	'Tuvault',
@@ -1651,8 +1499,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	156,
 	'Janette',
 	'King',
@@ -1666,8 +1513,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	157,
 	'Patrick',
 	'Sully',
@@ -1681,8 +1527,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	158,
 	'Allan',
 	'McEwen',
@@ -1696,8 +1541,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	159,
 	'Lindsey',
 	'Smith',
@@ -1711,8 +1555,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	160,
 	'Louise',
 	'Doran',
@@ -1726,8 +1569,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	161,
 	'Sarath',
 	'Sewall',
@@ -1741,8 +1583,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	162,
 	'Clara',
 	'Vishney',
@@ -1756,8 +1597,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	163,
 	'Danielle',
 	'Greene',
@@ -1771,8 +1611,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	164,
 	'Mattea',
 	'Marvins',
@@ -1786,8 +1625,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	165,
 	'David',
 	'Lee',
@@ -1801,8 +1639,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	166,
 	'Sundar',
 	'Ande',
@@ -1816,8 +1653,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	167,
 	'Amit',
 	'Banda',
@@ -1831,8 +1667,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	168,
 	'Lisa',
 	'Ozer',
@@ -1846,8 +1681,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	169,
 	'Harrison',
 	'Bloom',
@@ -1861,8 +1695,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	170,
 	'Tayler',
 	'Fox',
@@ -1876,8 +1709,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	171,
 	'William',
 	'Smith',
@@ -1891,8 +1723,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	172,
 	'Elizabeth',
 	'Bates',
@@ -1906,8 +1737,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	173,
 	'Sundita',
 	'Kumar',
@@ -1921,8 +1751,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	174,
 	'Ellen',
 	'Abel',
@@ -1936,8 +1765,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	175,
 	'Alyssa',
 	'Hutton',
@@ -1951,8 +1779,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	176,
 	'Jonathon',
 	'Taylor',
@@ -1966,8 +1793,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	177,
 	'Jack',
 	'Livingston',
@@ -1981,8 +1807,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	178,
 	'Kimberely',
 	'Grant',
@@ -1996,8 +1821,7 @@ VALUES (
 	NULL
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	179,
 	'Charles',
 	'Johnson',
@@ -2011,8 +1835,7 @@ VALUES (
 	80
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	180,
 	'Winston',
 	'Taylor',
@@ -2026,8 +1849,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	181,
 	'Jean',
 	'Fleaur',
@@ -2041,8 +1863,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	182,
 	'Martha',
 	'Sullivan',
@@ -2056,8 +1877,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	183,
 	'Girard',
 	'Geoni',
@@ -2071,8 +1891,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	184,
 	'Nandita',
 	'Sarchand',
@@ -2086,8 +1905,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	185,
 	'Alexis',
 	'Bull',
@@ -2101,8 +1919,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	186,
 	'Julia',
 	'Dellinger',
@@ -2116,8 +1933,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	187,
 	'Anthony',
 	'Cabrio',
@@ -2131,8 +1947,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	188,
 	'Kelly',
 	'Chung',
@@ -2146,8 +1961,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	189,
 	'Jennifer',
 	'Dilly',
@@ -2161,8 +1975,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	190,
 	'Timothy',
 	'Gates',
@@ -2176,8 +1989,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	191,
 	'Randall',
 	'Perkins',
@@ -2191,8 +2003,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	192,
 	'Sarah',
 	'Bell',
@@ -2206,8 +2017,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	193,
 	'Britney',
 	'Everett',
@@ -2221,8 +2031,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	194,
 	'Samuel',
 	'McCain',
@@ -2236,8 +2045,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	195,
 	'Vance',
 	'Jones',
@@ -2251,8 +2059,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	196,
 	'Alana',
 	'Walsh',
@@ -2266,8 +2073,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	197,
 	'Kevin',
 	'Feeney',
@@ -2281,8 +2087,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	198,
 	'Donald',
 	'OConnell',
@@ -2296,8 +2101,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	199,
 	'Douglas',
 	'Grant',
@@ -2311,8 +2115,7 @@ VALUES (
 	50
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	200,
 	'Jennifer',
 	'Whalen',
@@ -2326,8 +2129,7 @@ VALUES (
 	10
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	201,
 	'Michael',
 	'Hartstein',
@@ -2341,8 +2143,7 @@ VALUES (
 	20
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	202,
 	'Pat',
 	'Fay',
@@ -2356,8 +2157,7 @@ VALUES (
 	20
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	203,
 	'Susan',
 	'Mavris',
@@ -2371,8 +2171,7 @@ VALUES (
 	40
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	204,
 	'Hermann',
 	'Baer',
@@ -2386,8 +2185,7 @@ VALUES (
 	70
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	205,
 	'Shelley',
 	'Higgins',
@@ -2401,8 +2199,7 @@ VALUES (
 	110
 	);
 
-INSERT INTO employees
-VALUES (
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	206,
 	'William',
 	'Gietz',

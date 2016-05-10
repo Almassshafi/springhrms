@@ -20,16 +20,15 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "location_id")
-    private int locationId;
+    private long locationId;
 
     @ManyToOne
     @JoinColumn(name = "country_id")
     private Country country;
 
-	@OneToMany(mappedBy = "location", cascade = CascadeType.ALL)
-	private Set<Department> departments;
-    
-    
+    @OneToMany(mappedBy = "location", cascade = CascadeType.ALL)
+    private Set<Department> departments;
+
     @Column(name = "street_address")
     private String streetAddress;
 
