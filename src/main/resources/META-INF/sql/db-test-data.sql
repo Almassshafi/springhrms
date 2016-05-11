@@ -714,636 +714,636 @@ INSERT INTO jobs (`job_id`,`job_title`,`max_salary`,`min_salary`) VALUES (
 	);
 
 COMMIT;
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	100,
-	'Steven',
-	'King',
-	'SKING',
-	'515.123.4567',
-	STR_TO_DATE('17-JUN-1987', '%d-%M-%Y'),
-	'AD_PRES',
-	24000,
-	NULL,
-	NULL,
-	90
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	101,
-	'Neena',
-	'Kochhar',
-	'NKOCHHAR',
-	'515.123.4568',
-	STR_TO_DATE('21-SEP-1989', '%d-%M-%Y'),
-	'AD_VP',
-	17000,
-	NULL,
-	100,
-	90
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	102,
-	'Lex',
-	'De Haan',
-	'LDEHAAN',
-	'515.123.4569',
-	STR_TO_DATE('13-JAN-1993', '%d-%M-%Y'),
-	'AD_VP',
-	17000,
-	NULL,
-	100,
-	90
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	103,
-	'Alexander',
-	'Hunold',
-	'AHUNOLD',
-	'590.423.4567',
-	STR_TO_DATE('03-JAN-1990', '%d-%M-%Y'),
-	'IT_PROG',
-	9000,
-	NULL,
-	102,
-	60
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	104,
-	'Bruce',
-	'Ernst',
-	'BERNST',
-	'590.423.4568',
-	STR_TO_DATE('21-MAY-1991', '%d-%M-%Y'),
-	'IT_PROG',
-	6000,
-	NULL,
-	103,
-	60
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	105,
-	'David',
-	'Austin',
-	'DAUSTIN',
-	'590.423.4569',
-	STR_TO_DATE('25-JUN-1997', '%d-%M-%Y'),
-	'IT_PROG',
-	4800,
-	NULL,
-	103,
-	60
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	106,
-	'Valli',
-	'Pataballa',
-	'VPATABAL',
-	'590.423.4560',
-	STR_TO_DATE('05-FEB-1998', '%d-%M-%Y'),
-	'IT_PROG',
-	4800,
-	NULL,
-	103,
-	60
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	107,
-	'Diana',
-	'Lorentz',
-	'DLORENTZ',
-	'590.423.5567',
-	STR_TO_DATE('07-FEB-1999', '%d-%M-%Y'),
-	'IT_PROG',
-	4200,
-	NULL,
-	103,
-	60
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	108,
-	'Nancy',
-	'Greenberg',
-	'NGREENBE',
-	'515.124.4569',
-	STR_TO_DATE('17-AUG-1994', '%d-%M-%Y'),
-	'FI_MGR',
-	12000,
-	NULL,
-	101,
-	100
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	109,
-	'Daniel',
-	'Faviet',
-	'DFAVIET',
-	'515.124.4169',
-	STR_TO_DATE('16-AUG-1994', '%d-%M-%Y'),
-	'FI_ACCOUNT',
-	9000,
-	NULL,
-	108,
-	100
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	110,
-	'John',
-	'Chen',
-	'JCHEN',
-	'515.124.4269',
-	STR_TO_DATE('28-SEP-1997', '%d-%M-%Y'),
-	'FI_ACCOUNT',
-	8200,
-	NULL,
-	108,
-	100
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	111,
-	'Ismael',
-	'Sciarra',
-	'ISCIARRA',
-	'515.124.4369',
-	STR_TO_DATE('30-SEP-1997', '%d-%M-%Y'),
-	'FI_ACCOUNT',
-	7700,
-	NULL,
-	108,
-	100
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	112,
-	'Jose Manuel',
-	'Urman',
-	'JMURMAN',
-	'515.124.4469',
-	STR_TO_DATE('07-MAR-1998', '%d-%M-%Y'),
-	'FI_ACCOUNT',
-	7800,
-	NULL,
-	108,
-	100
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	113,
-	'Luis',
-	'Popp',
-	'LPOPP',
-	'515.124.4567',
-	STR_TO_DATE('07-DEC-1999', '%d-%M-%Y'),
-	'FI_ACCOUNT',
-	6900,
-	NULL,
-	108,
-	100
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	114,
-	'Den',
-	'Raphaely',
-	'DRAPHEAL',
-	'515.127.4561',
-	STR_TO_DATE('07-DEC-1994', '%d-%M-%Y'),
-	'PU_MAN',
-	11000,
-	NULL,
-	100,
-	30
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	115,
-	'Alexander',
-	'Khoo',
-	'AKHOO',
-	'515.127.4562',
-	STR_TO_DATE('18-MAY-1995', '%d-%M-%Y'),
-	'PU_CLERK',
-	3100,
-	NULL,
-	114,
-	30
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	116,
-	'Shelli',
-	'Baida',
-	'SBAIDA',
-	'515.127.4563',
-	STR_TO_DATE('24-DEC-1997', '%d-%M-%Y'),
-	'PU_CLERK',
-	2900,
-	NULL,
-	114,
-	30
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	117,
-	'Sigal',
-	'Tobias',
-	'STOBIAS',
-	'515.127.4564',
-	STR_TO_DATE('24-JUL-1997', '%d-%M-%Y'),
-	'PU_CLERK',
-	2800,
-	NULL,
-	114,
-	30
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	118,
-	'Guy',
-	'Himuro',
-	'GHIMURO',
-	'515.127.4565',
-	STR_TO_DATE('15-NOV-1998', '%d-%M-%Y'),
-	'PU_CLERK',
-	2600,
-	NULL,
-	114,
-	30
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	119,
-	'Karen',
-	'Colmenares',
-	'KCOLMENA',
-	'515.127.4566',
-	STR_TO_DATE('10-AUG-1999', '%d-%M-%Y'),
-	'PU_CLERK',
-	2500,
-	NULL,
-	114,
-	30
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	120,
-	'Matthew',
-	'Weiss',
-	'MWEISS',
-	'650.123.1234',
-	STR_TO_DATE('18-JUL-1996', '%d-%M-%Y'),
-	'ST_MAN',
-	8000,
-	NULL,
-	100,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	121,
-	'Adam',
-	'Fripp',
-	'AFRIPP',
-	'650.123.2234',
-	STR_TO_DATE('10-APR-1997', '%d-%M-%Y'),
-	'ST_MAN',
-	8200,
-	NULL,
-	100,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	122,
-	'Payam',
-	'Kaufling',
-	'PKAUFLIN',
-	'650.123.3234',
-	STR_TO_DATE('01-MAY-1995', '%d-%M-%Y'),
-	'ST_MAN',
-	7900,
-	NULL,
-	100,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	123,
-	'Shanta',
-	'Vollman',
-	'SVOLLMAN',
-	'650.123.4234',
-	STR_TO_DATE('10-OCT-1997', '%d-%M-%Y'),
-	'ST_MAN',
-	6500,
-	NULL,
-	100,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	124,
-	'Kevin',
-	'Mourgos',
-	'KMOURGOS',
-	'650.123.5234',
-	STR_TO_DATE('16-NOV-1999', '%d-%M-%Y'),
-	'ST_MAN',
-	5800,
-	NULL,
-	100,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	125,
-	'Julia',
-	'Nayer',
-	'JNAYER',
-	'650.124.1214',
-	STR_TO_DATE('16-JUL-1997', '%d-%M-%Y'),
-	'ST_CLERK',
-	3200,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	126,
-	'Irene',
-	'Mikkilineni',
-	'IMIKKILI',
-	'650.124.1224',
-	STR_TO_DATE('28-SEP-1998', '%d-%M-%Y'),
-	'ST_CLERK',
-	2700,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	127,
-	'James',
-	'Landry',
-	'JLANDRY',
-	'650.124.1334',
-	STR_TO_DATE('14-JAN-1999', '%d-%M-%Y'),
-	'ST_CLERK',
-	2400,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	128,
-	'Steven',
-	'Markle',
-	'SMARKLE',
-	'650.124.1434',
-	STR_TO_DATE('08-MAR-2000', '%d-%M-%Y'),
-	'ST_CLERK',
-	2200,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	129,
-	'Laura',
-	'Bissot',
-	'LBISSOT',
-	'650.124.5234',
-	STR_TO_DATE('20-AUG-1997', '%d-%M-%Y'),
-	'ST_CLERK',
-	3300,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	130,
-	'Mozhe',
-	'Atkinson',
-	'MATKINSO',
-	'650.124.6234',
-	STR_TO_DATE('30-OCT-1997', '%d-%M-%Y'),
-	'ST_CLERK',
-	2800,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	131,
-	'James',
-	'Marlow',
-	'JAMRLOW',
-	'650.124.7234',
-	STR_TO_DATE('16-FEB-1997', '%d-%M-%Y'),
-	'ST_CLERK',
-	2500,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	132,
-	'TJ',
-	'Olson',
-	'TJOLSON',
-	'650.124.8234',
-	STR_TO_DATE('10-APR-1999', '%d-%M-%Y'),
-	'ST_CLERK',
-	2100,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	133,
-	'Jason',
-	'Mallin',
-	'JMALLIN',
-	'650.127.1934',
-	STR_TO_DATE('14-JUN-1996', '%d-%M-%Y'),
-	'ST_CLERK',
-	3300,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	134,
-	'Michael',
-	'Rogers',
-	'MROGERS',
-	'650.127.1834',
-	STR_TO_DATE('26-AUG-1998', '%d-%M-%Y'),
-	'ST_CLERK',
-	2900,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	135,
-	'Ki',
-	'Gee',
-	'KGEE',
-	'650.127.1734',
-	STR_TO_DATE('12-DEC-1999', '%d-%M-%Y'),
-	'ST_CLERK',
-	2400,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	136,
-	'Hazel',
-	'Philtanker',
-	'HPHILTAN',
-	'650.127.1634',
-	STR_TO_DATE('06-FEB-2000', '%d-%M-%Y'),
-	'ST_CLERK',
-	2200,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	137,
-	'Renske',
-	'Ladwig',
-	'RLADWIG',
-	'650.121.1234',
-	STR_TO_DATE('14-JUL-1995', '%d-%M-%Y'),
-	'ST_CLERK',
-	3600,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	138,
-	'Stephen',
-	'Stiles',
-	'SSTILES',
-	'650.121.2034',
-	STR_TO_DATE('26-OCT-1997', '%d-%M-%Y'),
-	'ST_CLERK',
-	3200,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	139,
-	'John',
-	'Seo',
-	'JSEO',
-	'650.121.2019',
-	STR_TO_DATE('12-FEB-1998', '%d-%M-%Y'),
-	'ST_CLERK',
-	2700,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	140,
-	'Joshua',
-	'Patel',
-	'JPATEL',
-	'650.121.1834',
-	STR_TO_DATE('06-APR-1998', '%d-%M-%Y'),
-	'ST_CLERK',
-	2500,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	141,
-	'Trenna',
-	'Rajs',
-	'TRAJS',
-	'650.121.8009',
-	STR_TO_DATE('17-OCT-1995', '%d-%M-%Y'),
-	'ST_CLERK',
-	3500,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	142,
-	'Curtis',
-	'Davies',
-	'CDAVIES',
-	'650.121.2994',
-	STR_TO_DATE('29-JAN-1997', '%d-%M-%Y'),
-	'ST_CLERK',
-	3100,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	143,
-	'Randall',
-	'Matos',
-	'RMATOS',
-	'650.121.2874',
-	STR_TO_DATE('15-MAR-1998', '%d-%M-%Y'),
-	'ST_CLERK',
-	2600,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	144,
-	'Peter',
-	'Vargas',
-	'PVARGAS',
-	'650.121.2004',
-	STR_TO_DATE('09-JUL-1998', '%d-%M-%Y'),
-	'ST_CLERK',
-	2500,
-	NULL,
-	124,
-	50
-	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	100,
+--	'Steven',
+--	'King',
+--	'SKING',
+--	'515.123.4567',
+--	STR_TO_DATE('17-JUN-1987', '%d-%M-%Y'),
+--	'AD_PRES',
+--	24000,
+--	'100.00',
+--	NULL,
+--	90
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	101,
+--	'Neena',
+--	'Kochhar',
+--	'NKOCHHAR',
+--	'515.123.4568',
+--	STR_TO_DATE('21-SEP-1989', '%d-%M-%Y'),
+--	'AD_VP',
+--	17000,
+--	'100.00',
+--	100,
+--	90
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	102,
+--	'Lex',
+--	'De Haan',
+--	'LDEHAAN',
+--	'515.123.4569',
+--	STR_TO_DATE('13-JAN-1993', '%d-%M-%Y'),
+--	'AD_VP',
+--	17000,
+--	'100.00',
+--	100,
+--	90
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	103,
+--	'Alexander',
+--	'Hunold',
+--	'AHUNOLD',
+--	'590.423.4567',
+--	STR_TO_DATE('03-JAN-1990', '%d-%M-%Y'),
+--	'IT_PROG',
+--	9000,
+--	'100.00',
+--	102,
+--	60
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	104,
+--	'Bruce',
+--	'Ernst',
+--	'BERNST',
+--	'590.423.4568',
+--	STR_TO_DATE('21-MAY-1991', '%d-%M-%Y'),
+--	'IT_PROG',
+--	6000,
+--	'100.00',
+--	103,
+--	60
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	105,
+--	'David',
+--	'Austin',
+--	'DAUSTIN',
+--	'590.423.4569',
+--	STR_TO_DATE('25-JUN-1997', '%d-%M-%Y'),
+--	'IT_PROG',
+--	4800,
+--	'100.00',
+--	103,
+--	60
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	106,
+--	'Valli',
+--	'Pataballa',
+--	'VPATABAL',
+--	'590.423.4560',
+--	STR_TO_DATE('05-FEB-1998', '%d-%M-%Y'),
+--	'IT_PROG',
+--	4800,
+--	'100.00',
+--	103,
+--	60
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	107,
+--	'Diana',
+--	'Lorentz',
+--	'DLORENTZ',
+--	'590.423.5567',
+--	STR_TO_DATE('07-FEB-1999', '%d-%M-%Y'),
+--	'IT_PROG',
+--	4200,
+--	'100.00',
+--	103,
+--	60
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	108,
+--	'Nancy',
+--	'Greenberg',
+--	'NGREENBE',
+--	'515.124.4569',
+--	STR_TO_DATE('17-AUG-1994', '%d-%M-%Y'),
+--	'FI_MGR',
+--	12000,
+--	'100.00',
+--	101,
+--	100
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	109,
+--	'Daniel',
+--	'Faviet',
+--	'DFAVIET',
+--	'515.124.4169',
+--	STR_TO_DATE('16-AUG-1994', '%d-%M-%Y'),
+--	'FI_ACCOUNT',
+--	9000,
+--	'100.00',
+--	108,
+--	100
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	110,
+--	'John',
+--	'Chen',
+--	'JCHEN',
+--	'515.124.4269',
+--	STR_TO_DATE('28-SEP-1997', '%d-%M-%Y'),
+--	'FI_ACCOUNT',
+--	8200,
+--	NULL,
+--	108,
+--	100
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	111,
+--	'Ismael',
+--	'Sciarra',
+--	'ISCIARRA',
+--	'515.124.4369',
+--	STR_TO_DATE('30-SEP-1997', '%d-%M-%Y'),
+--	'FI_ACCOUNT',
+--	7700,
+--	NULL,
+--	108,
+--	100
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	112,
+--	'Jose Manuel',
+--	'Urman',
+--	'JMURMAN',
+--	'515.124.4469',
+--	STR_TO_DATE('07-MAR-1998', '%d-%M-%Y'),
+--	'FI_ACCOUNT',
+--	7800,
+--	NULL,
+--	108,
+--	100
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	113,
+--	'Luis',
+--	'Popp',
+--	'LPOPP',
+--	'515.124.4567',
+--	STR_TO_DATE('07-DEC-1999', '%d-%M-%Y'),
+--	'FI_ACCOUNT',
+--	6900,
+--	NULL,
+--	108,
+--	100
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	114,
+--	'Den',
+--	'Raphaely',
+--	'DRAPHEAL',
+--	'515.127.4561',
+--	STR_TO_DATE('07-DEC-1994', '%d-%M-%Y'),
+--	'PU_MAN',
+--	11000,
+--	NULL,
+--	100,
+--	30
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	115,
+--	'Alexander',
+--	'Khoo',
+--	'AKHOO',
+--	'515.127.4562',
+--	STR_TO_DATE('18-MAY-1995', '%d-%M-%Y'),
+--	'PU_CLERK',
+--	3100,
+--	NULL,
+--	114,
+--	30
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	116,
+--	'Shelli',
+--	'Baida',
+--	'SBAIDA',
+--	'515.127.4563',
+--	STR_TO_DATE('24-DEC-1997', '%d-%M-%Y'),
+--	'PU_CLERK',
+--	2900,
+--	NULL,
+--	114,
+--	30
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	117,
+--	'Sigal',
+--	'Tobias',
+--	'STOBIAS',
+--	'515.127.4564',
+--	STR_TO_DATE('24-JUL-1997', '%d-%M-%Y'),
+--	'PU_CLERK',
+--	2800,
+--	NULL,
+--	114,
+--	30
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	118,
+--	'Guy',
+--	'Himuro',
+--	'GHIMURO',
+--	'515.127.4565',
+--	STR_TO_DATE('15-NOV-1998', '%d-%M-%Y'),
+--	'PU_CLERK',
+--	2600,
+--	NULL,
+--	114,
+--	30
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	119,
+--	'Karen',
+--	'Colmenares',
+--	'KCOLMENA',
+--	'515.127.4566',
+--	STR_TO_DATE('10-AUG-1999', '%d-%M-%Y'),
+--	'PU_CLERK',
+--	2500,
+--	NULL,
+--	114,
+--	30
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	120,
+--	'Matthew',
+--	'Weiss',
+--	'MWEISS',
+--	'650.123.1234',
+--	STR_TO_DATE('18-JUL-1996', '%d-%M-%Y'),
+--	'ST_MAN',
+--	8000,
+--	NULL,
+--	100,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	121,
+--	'Adam',
+--	'Fripp',
+--	'AFRIPP',
+--	'650.123.2234',
+--	STR_TO_DATE('10-APR-1997', '%d-%M-%Y'),
+--	'ST_MAN',
+--	8200,
+--	NULL,
+--	100,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	122,
+--	'Payam',
+--	'Kaufling',
+--	'PKAUFLIN',
+--	'650.123.3234',
+--	STR_TO_DATE('01-MAY-1995', '%d-%M-%Y'),
+--	'ST_MAN',
+--	7900,
+--	NULL,
+--	100,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	123,
+--	'Shanta',
+--	'Vollman',
+--	'SVOLLMAN',
+--	'650.123.4234',
+--	STR_TO_DATE('10-OCT-1997', '%d-%M-%Y'),
+--	'ST_MAN',
+--	6500,
+--	NULL,
+--	100,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	124,
+--	'Kevin',
+--	'Mourgos',
+--	'KMOURGOS',
+--	'650.123.5234',
+--	STR_TO_DATE('16-NOV-1999', '%d-%M-%Y'),
+--	'ST_MAN',
+--	5800,
+--	NULL,
+--	100,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	125,
+--	'Julia',
+--	'Nayer',
+--	'JNAYER',
+--	'650.124.1214',
+--	STR_TO_DATE('16-JUL-1997', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3200,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	126,
+--	'Irene',
+--	'Mikkilineni',
+--	'IMIKKILI',
+--	'650.124.1224',
+--	STR_TO_DATE('28-SEP-1998', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2700,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	127,
+--	'James',
+--	'Landry',
+--	'JLANDRY',
+--	'650.124.1334',
+--	STR_TO_DATE('14-JAN-1999', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2400,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	128,
+--	'Steven',
+--	'Markle',
+--	'SMARKLE',
+--	'650.124.1434',
+--	STR_TO_DATE('08-MAR-2000', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2200,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	129,
+--	'Laura',
+--	'Bissot',
+--	'LBISSOT',
+--	'650.124.5234',
+--	STR_TO_DATE('20-AUG-1997', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3300,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	130,
+--	'Mozhe',
+--	'Atkinson',
+--	'MATKINSO',
+--	'650.124.6234',
+--	STR_TO_DATE('30-OCT-1997', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2800,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	131,
+--	'James',
+--	'Marlow',
+--	'JAMRLOW',
+--	'650.124.7234',
+--	STR_TO_DATE('16-FEB-1997', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2500,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	132,
+--	'TJ',
+--	'Olson',
+--	'TJOLSON',
+--	'650.124.8234',
+--	STR_TO_DATE('10-APR-1999', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2100,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	133,
+--	'Jason',
+--	'Mallin',
+--	'JMALLIN',
+--	'650.127.1934',
+--	STR_TO_DATE('14-JUN-1996', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3300,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	134,
+--	'Michael',
+--	'Rogers',
+--	'MROGERS',
+--	'650.127.1834',
+--	STR_TO_DATE('26-AUG-1998', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2900,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	135,
+--	'Ki',
+--	'Gee',
+--	'KGEE',
+--	'650.127.1734',
+--	STR_TO_DATE('12-DEC-1999', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2400,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	136,
+--	'Hazel',
+--	'Philtanker',
+--	'HPHILTAN',
+--	'650.127.1634',
+--	STR_TO_DATE('06-FEB-2000', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2200,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	137,
+--	'Renske',
+--	'Ladwig',
+--	'RLADWIG',
+--	'650.121.1234',
+--	STR_TO_DATE('14-JUL-1995', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3600,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	138,
+--	'Stephen',
+--	'Stiles',
+--	'SSTILES',
+--	'650.121.2034',
+--	STR_TO_DATE('26-OCT-1997', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3200,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	139,
+--	'John',
+--	'Seo',
+--	'JSEO',
+--	'650.121.2019',
+--	STR_TO_DATE('12-FEB-1998', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2700,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	140,
+--	'Joshua',
+--	'Patel',
+--	'JPATEL',
+--	'650.121.1834',
+--	STR_TO_DATE('06-APR-1998', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2500,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	141,
+--	'Trenna',
+--	'Rajs',
+--	'TRAJS',
+--	'650.121.8009',
+--	STR_TO_DATE('17-OCT-1995', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3500,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	142,
+--	'Curtis',
+--	'Davies',
+--	'CDAVIES',
+--	'650.121.2994',
+--	STR_TO_DATE('29-JAN-1997', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	3100,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	143,
+--	'Randall',
+--	'Matos',
+--	'RMATOS',
+--	'650.121.2874',
+--	STR_TO_DATE('15-MAR-1998', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2600,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	144,
+--	'Peter',
+--	'Vargas',
+--	'PVARGAS',
+--	'650.121.2004',
+--	STR_TO_DATE('09-JUL-1998', '%d-%M-%Y'),
+--	'ST_CLERK',
+--	2500,
+--	NULL,
+--	124,
+--	50
+--	);
 
 INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
 	145,
@@ -1835,382 +1835,382 @@ INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone
 	80
 	);
 
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	180,
-	'Winston',
-	'Taylor',
-	'WTAYLOR',
-	'650.507.9876',
-	STR_TO_DATE('24-JAN-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	3200,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	181,
-	'Jean',
-	'Fleaur',
-	'JFLEAUR',
-	'650.507.9877',
-	STR_TO_DATE('23-FEB-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	3100,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	182,
-	'Martha',
-	'Sullivan',
-	'MSULLIVA',
-	'650.507.9878',
-	STR_TO_DATE('21-JUN-1999', '%d-%M-%Y'),
-	'SH_CLERK',
-	2500,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	183,
-	'Girard',
-	'Geoni',
-	'GGEONI',
-	'650.507.9879',
-	STR_TO_DATE('03-FEB-2000', '%d-%M-%Y'),
-	'SH_CLERK',
-	2800,
-	NULL,
-	120,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	184,
-	'Nandita',
-	'Sarchand',
-	'NSARCHAN',
-	'650.509.1876',
-	STR_TO_DATE('27-JAN-1996', '%d-%M-%Y'),
-	'SH_CLERK',
-	4200,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	185,
-	'Alexis',
-	'Bull',
-	'ABULL',
-	'650.509.2876',
-	STR_TO_DATE('20-FEB-1997', '%d-%M-%Y'),
-	'SH_CLERK',
-	4100,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	186,
-	'Julia',
-	'Dellinger',
-	'JDELLING',
-	'650.509.3876',
-	STR_TO_DATE('24-JUN-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	3400,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	187,
-	'Anthony',
-	'Cabrio',
-	'ACABRIO',
-	'650.509.4876',
-	STR_TO_DATE('07-FEB-1999', '%d-%M-%Y'),
-	'SH_CLERK',
-	3000,
-	NULL,
-	121,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	188,
-	'Kelly',
-	'Chung',
-	'KCHUNG',
-	'650.505.1876',
-	STR_TO_DATE('14-JUN-1997', '%d-%M-%Y'),
-	'SH_CLERK',
-	3800,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	189,
-	'Jennifer',
-	'Dilly',
-	'JDILLY',
-	'650.505.2876',
-	STR_TO_DATE('13-AUG-1997', '%d-%M-%Y'),
-	'SH_CLERK',
-	3600,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	190,
-	'Timothy',
-	'Gates',
-	'TGATES',
-	'650.505.3876',
-	STR_TO_DATE('11-JUL-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	2900,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	191,
-	'Randall',
-	'Perkins',
-	'RPERKINS',
-	'650.505.4876',
-	STR_TO_DATE('19-DEC-1999', '%d-%M-%Y'),
-	'SH_CLERK',
-	2500,
-	NULL,
-	122,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	192,
-	'Sarah',
-	'Bell',
-	'SBELL',
-	'650.501.1876',
-	STR_TO_DATE('04-FEB-1996', '%d-%M-%Y'),
-	'SH_CLERK',
-	4000,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	193,
-	'Britney',
-	'Everett',
-	'BEVERETT',
-	'650.501.2876',
-	STR_TO_DATE('03-MAR-1997', '%d-%M-%Y'),
-	'SH_CLERK',
-	3900,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	194,
-	'Samuel',
-	'McCain',
-	'SMCCAIN',
-	'650.501.3876',
-	STR_TO_DATE('01-JUL-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	3200,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	195,
-	'Vance',
-	'Jones',
-	'VJONES',
-	'650.501.4876',
-	STR_TO_DATE('17-MAR-1999', '%d-%M-%Y'),
-	'SH_CLERK',
-	2800,
-	NULL,
-	123,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	196,
-	'Alana',
-	'Walsh',
-	'AWALSH',
-	'650.507.9811',
-	STR_TO_DATE('24-APR-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	3100,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	197,
-	'Kevin',
-	'Feeney',
-	'KFEENEY',
-	'650.507.9822',
-	STR_TO_DATE('23-MAY-1998', '%d-%M-%Y'),
-	'SH_CLERK',
-	3000,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	198,
-	'Donald',
-	'OConnell',
-	'DOCONNEL',
-	'650.507.9833',
-	STR_TO_DATE('21-JUN-1999', '%d-%M-%Y'),
-	'SH_CLERK',
-	2600,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	199,
-	'Douglas',
-	'Grant',
-	'DGRANT',
-	'650.507.9844',
-	STR_TO_DATE('13-JAN-2000', '%d-%M-%Y'),
-	'SH_CLERK',
-	2600,
-	NULL,
-	124,
-	50
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	200,
-	'Jennifer',
-	'Whalen',
-	'JWHALEN',
-	'515.123.4444',
-	STR_TO_DATE('17-SEP-1987', '%d-%M-%Y'),
-	'AD_ASST',
-	4400,
-	NULL,
-	101,
-	10
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	201,
-	'Michael',
-	'Hartstein',
-	'MHARTSTE',
-	'515.123.5555',
-	STR_TO_DATE('17-FEB-1996', '%d-%M-%Y'),
-	'MK_MAN',
-	13000,
-	NULL,
-	100,
-	20
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	202,
-	'Pat',
-	'Fay',
-	'PFAY',
-	'603.123.6666',
-	STR_TO_DATE('17-AUG-1997', '%d-%M-%Y'),
-	'MK_REP',
-	6000,
-	NULL,
-	201,
-	20
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	203,
-	'Susan',
-	'Mavris',
-	'SMAVRIS',
-	'515.123.7777',
-	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
-	'HR_REP',
-	6500,
-	NULL,
-	101,
-	40
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	204,
-	'Hermann',
-	'Baer',
-	'HBAER',
-	'515.123.8888',
-	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
-	'PR_REP',
-	10000,
-	NULL,
-	101,
-	70
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	205,
-	'Shelley',
-	'Higgins',
-	'SHIGGINS',
-	'515.123.8080',
-	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
-	'AC_MGR',
-	12000,
-	NULL,
-	101,
-	110
-	);
-
-INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
-	206,
-	'William',
-	'Gietz',
-	'WGIETZ',
-	'51hr5.123.8181',
-	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
-	'AC_ACCOUNT',
-	8300,
-	NULL,
-	205,
-	110
-	);
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	180,
+--	'Winston',
+--	'Taylor',
+--	'WTAYLOR',
+--	'650.507.9876',
+--	STR_TO_DATE('24-JAN-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3200,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	181,
+--	'Jean',
+--	'Fleaur',
+--	'JFLEAUR',
+--	'650.507.9877',
+--	STR_TO_DATE('23-FEB-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3100,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	182,
+--	'Martha',
+--	'Sullivan',
+--	'MSULLIVA',
+--	'650.507.9878',
+--	STR_TO_DATE('21-JUN-1999', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2500,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	183,
+--	'Girard',
+--	'Geoni',
+--	'GGEONI',
+--	'650.507.9879',
+--	STR_TO_DATE('03-FEB-2000', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2800,
+--	NULL,
+--	120,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	184,
+--	'Nandita',
+--	'Sarchand',
+--	'NSARCHAN',
+--	'650.509.1876',
+--	STR_TO_DATE('27-JAN-1996', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	4200,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	185,
+--	'Alexis',
+--	'Bull',
+--	'ABULL',
+--	'650.509.2876',
+--	STR_TO_DATE('20-FEB-1997', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	4100,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	186,
+--	'Julia',
+--	'Dellinger',
+--	'JDELLING',
+--	'650.509.3876',
+--	STR_TO_DATE('24-JUN-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3400,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	187,
+--	'Anthony',
+--	'Cabrio',
+--	'ACABRIO',
+--	'650.509.4876',
+--	STR_TO_DATE('07-FEB-1999', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3000,
+--	NULL,
+--	121,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	188,
+--	'Kelly',
+--	'Chung',
+--	'KCHUNG',
+--	'650.505.1876',
+--	STR_TO_DATE('14-JUN-1997', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3800,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	189,
+--	'Jennifer',
+--	'Dilly',
+--	'JDILLY',
+--	'650.505.2876',
+--	STR_TO_DATE('13-AUG-1997', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3600,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	190,
+--	'Timothy',
+--	'Gates',
+--	'TGATES',
+--	'650.505.3876',
+--	STR_TO_DATE('11-JUL-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2900,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	191,
+--	'Randall',
+--	'Perkins',
+--	'RPERKINS',
+--	'650.505.4876',
+--	STR_TO_DATE('19-DEC-1999', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2500,
+--	NULL,
+--	122,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	192,
+--	'Sarah',
+--	'Bell',
+--	'SBELL',
+--	'650.501.1876',
+--	STR_TO_DATE('04-FEB-1996', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	4000,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	193,
+--	'Britney',
+--	'Everett',
+--	'BEVERETT',
+--	'650.501.2876',
+--	STR_TO_DATE('03-MAR-1997', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3900,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	194,
+--	'Samuel',
+--	'McCain',
+--	'SMCCAIN',
+--	'650.501.3876',
+--	STR_TO_DATE('01-JUL-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3200,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	195,
+--	'Vance',
+--	'Jones',
+--	'VJONES',
+--	'650.501.4876',
+--	STR_TO_DATE('17-MAR-1999', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2800,
+--	NULL,
+--	123,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	196,
+--	'Alana',
+--	'Walsh',
+--	'AWALSH',
+--	'650.507.9811',
+--	STR_TO_DATE('24-APR-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3100,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	197,
+--	'Kevin',
+--	'Feeney',
+--	'KFEENEY',
+--	'650.507.9822',
+--	STR_TO_DATE('23-MAY-1998', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	3000,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	198,
+--	'Donald',
+--	'OConnell',
+--	'DOCONNEL',
+--	'650.507.9833',
+--	STR_TO_DATE('21-JUN-1999', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2600,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	199,
+--	'Douglas',
+--	'Grant',
+--	'DGRANT',
+--	'650.507.9844',
+--	STR_TO_DATE('13-JAN-2000', '%d-%M-%Y'),
+--	'SH_CLERK',
+--	2600,
+--	NULL,
+--	124,
+--	50
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	200,
+--	'Jennifer',
+--	'Whalen',
+--	'JWHALEN',
+--	'515.123.4444',
+--	STR_TO_DATE('17-SEP-1987', '%d-%M-%Y'),
+--	'AD_ASST',
+--	4400,
+--	NULL,
+--	101,
+--	10
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	201,
+--	'Michael',
+--	'Hartstein',
+--	'MHARTSTE',
+--	'515.123.5555',
+--	STR_TO_DATE('17-FEB-1996', '%d-%M-%Y'),
+--	'MK_MAN',
+--	13000,
+--	NULL,
+--	100,
+--	20
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	202,
+--	'Pat',
+--	'Fay',
+--	'PFAY',
+--	'603.123.6666',
+--	STR_TO_DATE('17-AUG-1997', '%d-%M-%Y'),
+--	'MK_REP',
+--	6000,
+--	NULL,
+--	201,
+--	20
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	203,
+--	'Susan',
+--	'Mavris',
+--	'SMAVRIS',
+--	'515.123.7777',
+--	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
+--	'HR_REP',
+--	6500,
+--	NULL,
+--	101,
+--	40
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	204,
+--	'Hermann',
+--	'Baer',
+--	'HBAER',
+--	'515.123.8888',
+--	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
+--	'PR_REP',
+--	10000,
+--	NULL,
+--	101,
+--	70
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	205,
+--	'Shelley',
+--	'Higgins',
+--	'SHIGGINS',
+--	'515.123.8080',
+--	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
+--	'AC_MGR',
+--	12000,
+--	NULL,
+--	101,
+--	110
+--	);
+--
+--INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`,`job_id`, `salary`,`commission_pct`,`manager_id`,`department_id`) VALUES(
+--	206,
+--	'William',
+--	'Gietz',
+--	'WGIETZ',
+--	'51hr5.123.8181',
+--	STR_TO_DATE('07-JUN-1994', '%d-%M-%Y'),
+--	'AC_ACCOUNT',
+--	8300,
+--	NULL,
+--	205,
+--	110
+--	);
 
 COMMIT;

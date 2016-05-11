@@ -28,9 +28,10 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<Employee> getAllEmployees() {
-        return (List<Employee>) sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
+    	return (List<Employee>) sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
     }
 
     @Override

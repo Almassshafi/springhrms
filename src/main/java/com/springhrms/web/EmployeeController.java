@@ -1,11 +1,13 @@
 package com.springhrms.web;
 
-import com.springhrms.model.Employee;
-import com.springhrms.service.EmployeeService;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.springhrms.model.Employee;
+import com.springhrms.service.EmployeeService;
 
 @Controller
 @RequestMapping("/employee")

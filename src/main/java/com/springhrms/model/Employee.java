@@ -36,9 +36,9 @@ public class Employee {
 	@ManyToOne
 	@JoinColumn(name = "job_id")
 	private Job job;
-	
+
 	@ManyToOne(cascade = { CascadeType.ALL })
-	@JoinColumn(name = "manager_id",nullable = true)
+	@JoinColumn(name = "manager_id", nullable = true)
 	private Employee manager;
 
 	@OneToMany(mappedBy = "manager")
@@ -60,13 +60,17 @@ public class Employee {
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date hireDate;
 
-	@Column(name = "salary")
+	@Column(name = "salary", columnDefinition = "Decimal(10,2) default '100.00'")
 	private double salary;
 
-	@Column(name = "commission_pct")
+	@Column(name = "commission_pct", columnDefinition = "Decimal(10,2) default '100.00'")
 	private double commissionPct;
 
 	@OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
 	private JobHistory jobHistory;
 
+	@Override
+	public String toString() {
+		return "id=" + employeeId + ", name=" + firstName + " " + lastName + ", email=" + email;
+	}
 }
