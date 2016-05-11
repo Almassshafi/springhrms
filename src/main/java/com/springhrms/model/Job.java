@@ -13,9 +13,9 @@ import javax.persistence.Table;
 @Table(name = "jobs")
 public class Job {
 
-        @Id
-        @Column(name = "job_id", unique = true, nullable = false)
-        private String jobId;
+	@Id
+	@Column(name = "job_id", unique = true, nullable = false)
+	private String jobId;
 
 	@Column(name = "job_title")
 	private String jobTitle;
@@ -31,4 +31,55 @@ public class Job {
 
 	@OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
 	private Set<JobHistory> jobhistories;
+
+	public String getJobId() {
+		return jobId;
+	}
+
+	public void setJobId(String jobId) {
+		this.jobId = jobId;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public double getMinSalary() {
+		return minSalary;
+	}
+
+	public void setMinSalary(double minSalary) {
+		this.minSalary = minSalary;
+	}
+
+	public double getMaxSalary() {
+		return maxSalary;
+	}
+
+	public void setMaxSalary(double maxSalary) {
+		this.maxSalary = maxSalary;
+	}
+
+	public Set<Employee> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(Set<Employee> employees) {
+		this.employees = employees;
+	}
+
+	public Set<JobHistory> getJobhistories() {
+		return jobhistories;
+	}
+
+	public void setJobhistories(Set<JobHistory> jobhistories) {
+		this.jobhistories = jobhistories;
+	}
+	
+	
+	
 }

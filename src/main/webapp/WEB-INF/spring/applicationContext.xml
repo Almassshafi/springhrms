@@ -46,8 +46,8 @@
 			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
 
-<!-- 	<jdbc:initialize-database data-source="dataSource">
+ 	<!-- <jdbc:initialize-database data-source="dataSource">
 		<jdbc:script location="classpath:META-INF/sql/db-test-data.sql" />
-	</jdbc:initialize-database>
- -->
+	</jdbc:initialize-database> -->
+
 </beans:beans>
