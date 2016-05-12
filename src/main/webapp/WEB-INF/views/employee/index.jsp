@@ -5,6 +5,8 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <p>Manage Employees</p>
+<a href="<c:url value='/employee/add' />">Add New Employee</a>
+     
 <table id="employee_list_table">
 	<tr>
 		<th>Email</th>

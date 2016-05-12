@@ -6,7 +6,9 @@
 
 	<definition name="EmployeeIndex" extends="masterlayout">
 		<put-attribute name="body" value="/WEB-INF/views/employee/index.jsp" />
-		<put-attribute name="activePage" value="dashboard"
-			cascade="true" />
+	</definition>
+	<definition name="AddEmployee" extends="masterlayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/employee/addEmployee.jsp" />
 	</definition>
 </tiles-definitions>
