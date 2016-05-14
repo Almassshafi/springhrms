@@ -13,9 +13,9 @@ public interface JobService {
 
     public Job updateJob(Job job);
 
-    public void deleteJob(long id);
+    public void deleteJob(String jobId);
 
     public List<Job> getAllJobs();
 
-    public Job getJob(long id);
+    public Job getJob(String jobId);
 }

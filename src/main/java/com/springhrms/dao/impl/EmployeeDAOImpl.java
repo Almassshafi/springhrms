@@ -10,33 +10,34 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 
-    @Autowired
-    private SessionFactory sessionFactory;
+	@Autowired
+	private SessionFactory sessionFactory;
 
-    @Override
-    public long createEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	public long createEmployee(Employee employee) {
+		Long newKey = (Long) sessionFactory.getCurrentSession().save(employee);
+		return newKey.longValue();
+	}
 
-    @Override
-    public Employee updateEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
-    @Override
-    public void deleteEmployee(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	public void deleteEmployee(long id) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
-    @SuppressWarnings("unchecked")
-    @Override
-    public List<Employee> getAllEmployees() {
-    	return (List<Employee>) sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
-    }
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Employee> getAllEmployees() {
+		return (List<Employee>) sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
+	}
 
-    @Override
-    public Employee getEmployee(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	public Employee getEmployee(long id) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
 }

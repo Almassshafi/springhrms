@@ -18,37 +18,37 @@ import org.springframework.stereotype.Service;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    @Autowired
-    private EmployeeDAO employeeDAO;
+	@Autowired
+	private EmployeeDAO employeeDAO;
 
-    @Override
-    @Transactional
-    public long createEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	@Transactional
+	public long createEmployee(Employee employee) {
+		return employeeDAO.createEmployee(employee);
+	}
 
-    @Override
-    @Transactional
-    public Employee updateEmployee(Employee employee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	@Transactional
+	public Employee updateEmployee(Employee employee) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
-    @Override
-    @Transactional
-    public void deleteEmployee(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	@Transactional
+	public void deleteEmployee(long id) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
-    @Override
-    @Transactional
-    public List<Employee> getAllEmployees() {
-        return employeeDAO.getAllEmployees();
-    }
+	@Override
+	@Transactional
+	public List<Employee> getAllEmployees() {
+		return employeeDAO.getAllEmployees();
+	}
 
-    @Override
-    @Transactional
-    public Employee getEmployee(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+	@Override
+	@Transactional
+	public Employee getEmployee(long id) {
+		throw new UnsupportedOperationException("Not supported yet.");
+	}
 
 }

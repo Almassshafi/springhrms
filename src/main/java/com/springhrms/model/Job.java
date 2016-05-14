@@ -80,6 +80,9 @@ public class Job {
 		this.jobhistories = jobhistories;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "id=" + jobId + ", title=" + jobTitle ;
+	}
 	
 }

@@ -9,7 +9,7 @@
 
 
 	<context:component-scan base-package="com.springhrms.web" />
-        <mvc:annotation-driven />
+	<mvc:annotation-driven conversion-service="conversionService" />
 
 	<beans:bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -42,11 +42,21 @@
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
 		up static resources in the ${webappRoot}/resources directory -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />
-        
-        <!-- Registering message property file-->
-         <beans:bean id="messageSource"
-                    class="org.springframework.context.support.ResourceBundleMessageSource">
-            <beans:property name="basename" value="META-INF/messages/messages" />
-        </beans:bean>
+
+	<!-- Registering message property file -->
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<beans:property name="basename" value="META-INF/messages/messages" />
+	</beans:bean>
+
+
+	<beans:bean id="conversionService"
+		class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<beans:property name="converters">
+			<beans:list>
+				<beans:bean class="com.springhrms.web.converters.StringToJob" />
+			</beans:list>
+		</beans:property>
+	</beans:bean>
 
 </beans:beans>

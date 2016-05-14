@@ -4,6 +4,6 @@
 
 <ul>
 	<li><a href="<c:url value='/' />">Home</a></li>
-	<li><a href="<c:url value='/employee' />">Employee
+	<li><a href="<c:url value='/employee/list' />">Employee
 			Administration</a></li>
 </ul>

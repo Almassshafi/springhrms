@@ -13,6 +13,8 @@
 		<org.aspectj-version>1.7.4</org.aspectj-version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
+		<hibernate.validator.version>5.1.2.Final</hibernate.validator.version>
+        <javax.validation.version>1.1.0.Final</javax.validation.version>
 		<mysql.version>5.1.10</mysql.version>
 	</properties>
 	<!-- http://myjourneyonjava.blogspot.in/2015/09/spring-4-mvc-hibernate-4-mysql-5-maven.html -->
@@ -53,6 +55,18 @@
 			<version>${hibernate.version}</version>
 		</dependency>
 
+ 		<dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${javax.validation.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate.validator.version}</version>
+        </dependency>
+         
+         
 		<!--MYSQL Connector -->
 		<dependency>
 			<groupId>mysql</groupId>
