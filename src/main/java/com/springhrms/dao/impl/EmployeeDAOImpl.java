@@ -29,9 +29,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	@Override
 	public void deleteEmployee(long employeeId) {
-		Employee employee = getEmployee(employeeId);
-		if (employee != null)
-			sessionFactory.getCurrentSession().delete(employee);
+		sessionFactory.getCurrentSession().createQuery("DELETE FROM Employee WHERE employeeId = "+employeeId).executeUpdate();
+		
 	}
 
 	@SuppressWarnings("unchecked")
