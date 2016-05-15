@@ -42,7 +42,7 @@ public class JobDAOImpl implements JobDAO {
 
 	@Override
 	public Job getJob(String jobId) {
-		return (Job) sessionFactory.getCurrentSession().createQuery("from Job where jobId='"+jobId+"'").uniqueResult();
+		return (Job) sessionFactory.getCurrentSession().get(Job.class, jobId);
 	}
 
 }

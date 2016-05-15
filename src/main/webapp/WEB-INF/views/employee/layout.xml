@@ -5,10 +5,19 @@
 <tiles-definitions>
 
 	<definition name="listEmployee" extends="masterlayout">
-		<put-attribute name="body" value="/WEB-INF/views/employee/listEmployee.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/employee/listEmployee.jsp" />
 	</definition>
 	<definition name="addEmployee" extends="masterlayout">
 		<put-attribute name="body"
 			value="/WEB-INF/views/employee/addEmployee.jsp" />
+	</definition>
+	<definition name="editEmployee" extends="masterlayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/employee/editEmployee.jsp" />
+	</definition>
+	<definition name="deleteEmployee" extends="masterlayout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/employee/deleteEmployee.jsp" />
 	</definition>
 </tiles-definitions>

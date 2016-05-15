@@ -2,6 +2,8 @@ package com.springhrms.dao.impl;
 
 import com.springhrms.dao.EmployeeDAO;
 import com.springhrms.model.Employee;
+import com.springhrms.model.Job;
+
 import java.util.List;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +23,15 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
-		throw new UnsupportedOperationException("Not supported yet.");
+		sessionFactory.getCurrentSession().update(employee);
+		return employee;
 	}
 
 	@Override
-	public void deleteEmployee(long id) {
-		throw new UnsupportedOperationException("Not supported yet.");
+	public void deleteEmployee(long employeeId) {
+		Employee employee = getEmployee(employeeId);
+		if (employee != null)
+			sessionFactory.getCurrentSession().delete(employee);
 	}
 
 	@SuppressWarnings("unchecked")
@@ -36,8 +41,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	}
 
 	@Override
-	public Employee getEmployee(long id) {
-		throw new UnsupportedOperationException("Not supported yet.");
+	public Employee getEmployee(long employeeId) {
+		return (Employee) sessionFactory.getCurrentSession().get(Employee.class, employeeId);
 	}
 
 }

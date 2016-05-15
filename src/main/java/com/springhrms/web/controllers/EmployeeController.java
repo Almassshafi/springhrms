@@ -15,6 +15,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -31,6 +32,8 @@ public class EmployeeController {
 
 	private static final String VIEWS_EMPLOYEE_CREATE_FORM = "addEmployee";
 	private static final String VIEWS_EMPLOYEE_LIST_VIEW = "listEmployee";
+	private static final String VIEWS_EMPLOYEE_EDIT_FORM = "editEmployee";
+	private static final String VIEWS_EMPLOYEE_DELETE_FORM = "deleteEmployee";
 
 	@Autowired
 	EmployeeService employeeService;
@@ -78,6 +81,50 @@ public class EmployeeController {
 		employeeService.createEmployee(employee);
 		redirectAttributes.addFlashAttribute("message",
 				messageSource.getMessage("operationMessage.employeeAddSuccess", new String[] {}, Locale.US));
+		return "redirect:/employee/list";
+	}
+
+	@RequestMapping(value = { "/edit/{employeeId}" }, method = RequestMethod.GET)
+	public ModelAndView editEmployee(@PathVariable Integer employeeId) {
+		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_EDIT_FORM);
+		Employee employee = employeeService.getEmployee(employeeId);
+		mav.addObject("employee", employee);
+		return mav;
+	}
+
+	@RequestMapping(value = { "/update" }, method = RequestMethod.POST)
+	public String updateEmployee(@Valid @ModelAttribute("employee") Employee employee, BindingResult result,
+			RedirectAttributes redirectAttributes) {
+		if (result.hasErrors()) {
+			return VIEWS_EMPLOYEE_EDIT_FORM;
+		}
+		employeeService.updateEmployee(employee);
+		redirectAttributes.addFlashAttribute("message",
+				messageSource.getMessage("operationMessage.employeeEditSuccess", new String[] {}, Locale.US));
+		return "redirect:/employee/list";
+	}
+
+	@RequestMapping(value = { "/delete/{employeeId}" }, method = RequestMethod.GET)
+	public ModelAndView deleteEmployee(@PathVariable Integer employeeId) {
+		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_DELETE_FORM);
+		Employee employee = employeeService.getEmployee(employeeId);
+		mav.addObject("employee", employee);
+		return mav;
+	}
+
+	@RequestMapping(value = { "/deleteProcess" }, method = RequestMethod.POST)
+	public String deleteProcessEmployee(@ModelAttribute("employee") Employee employee,
+			RedirectAttributes redirectAttributes) {
+		int employeeId = (int) employee.getEmployeeId();
+		if (employeeId != 0) {
+			employeeService.deleteEmployee(employeeId);
+
+			redirectAttributes.addFlashAttribute("message",
+					messageSource.getMessage("operationMessage.employeeDeleteSuccess", new String[] {}, Locale.US));
+		} else {
+			redirectAttributes.addFlashAttribute("message",
+					messageSource.getMessage("operationMessage.employeeDeleteError", new String[] {}, Locale.US));
+		}
 		return "redirect:/employee/list";
 	}
 

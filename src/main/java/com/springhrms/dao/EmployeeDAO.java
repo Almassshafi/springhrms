@@ -13,10 +13,10 @@ public interface EmployeeDAO {
 
     public Employee updateEmployee(Employee employee);
 
-    public void deleteEmployee(long id);
+    public void deleteEmployee(long employeeId);
 
     public List<Employee> getAllEmployees();
 
-    public Employee getEmployee(long id);
+    public Employee getEmployee(long employeeId);
 
 }

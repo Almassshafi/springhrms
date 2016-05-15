@@ -30,13 +30,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	@Transactional
 	public Employee updateEmployee(Employee employee) {
-		throw new UnsupportedOperationException("Not supported yet.");
+		return employeeDAO.updateEmployee(employee);
 	}
 
 	@Override
 	@Transactional
-	public void deleteEmployee(long id) {
-		throw new UnsupportedOperationException("Not supported yet.");
+	public void deleteEmployee(long employeeId) {
+		employeeDAO.deleteEmployee(employeeId);
 	}
 
 	@Override
@@ -47,8 +47,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	@Transactional
-	public Employee getEmployee(long id) {
-		throw new UnsupportedOperationException("Not supported yet.");
+	public Employee getEmployee(long employeeId) {
+		return employeeDAO.getEmployee(employeeId);
 	}
 
 }

@@ -18,12 +18,15 @@
 	</tr>
 	<c:forEach items="${employees}" var="employee">
 		<tr>
-			<td>${employee.email}</td>
+			<td><a
+				href="<c:url value='${pageContext.request.contextPath}/employee/edit/${employee.employeeId}' />">
+					${employee.email} </a></td>
 			<td>${employee.job.jobTitle}</td>
 			<td>${employee.firstName}</td>
 			<td>${employee.lastName}</td>
 			<td>${employee.phoneNumber}</td>
-			<td>${employee.employeeId}</td>
+			<td><a
+				href="<c:url value='${pageContext.request.contextPath}/employee/delete/${employee.employeeId}' />">Delete</a></td>
 		</tr>
 	</c:forEach>
 </table>
