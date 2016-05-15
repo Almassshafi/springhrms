@@ -47,9 +47,7 @@ public class JobServiceImpl implements JobService {
 	@Override
 	@Transactional
 	public Job getJob(String jobId) {
-		Job job = (Job) jobDAO.getJob(jobId);
-		System.out.println(job);
-		return job;
+		return jobDAO.getJob(jobId);
 	}
 
 }

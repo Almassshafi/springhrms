@@ -6,7 +6,7 @@
 
 <p>Manage Employees</p>
 <a href="<c:url value='/employee/add' />">Add New Employee</a>
-     
+<span class="success">${message}</span>
 <table id="employee_list_table">
 	<tr>
 		<th>Email</th>

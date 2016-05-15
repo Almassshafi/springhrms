@@ -1,13 +1,15 @@
-package com.springhrms.web;
+package com.springhrms.web.controllers;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.springhrms.model.Employee;
 import com.springhrms.model.Job;
@@ -26,13 +29,17 @@ import com.springhrms.service.JobService;
 @RequestMapping("/employee")
 public class EmployeeController {
 
+	private static final String VIEWS_EMPLOYEE_CREATE_FORM = "addEmployee";
+	private static final String VIEWS_EMPLOYEE_LIST_VIEW = "listEmployee";
+
 	@Autowired
 	EmployeeService employeeService;
 
 	@Autowired
 	JobService jobService;
 
-	private static final String VIEWS_EMPLOYEE_CREATE_FORM = "addEmployee";
+	@Autowired
+	private MessageSource messageSource;
 
 	@InitBinder
 	public void initBinder(WebDataBinder webDataBinder) {
@@ -48,7 +55,7 @@ public class EmployeeController {
 
 	@RequestMapping(value = { "/list" }, method = RequestMethod.GET)
 	public ModelAndView listEmployee() {
-		ModelAndView mav = new ModelAndView("listEmployee");
+		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_LIST_VIEW);
 		List<Employee> allEmployee = employeeService.getAllEmployees();
 		mav.addObject("employees", allEmployee);
 		return mav;
@@ -63,11 +70,15 @@ public class EmployeeController {
 	}
 
 	@RequestMapping(value = { "/save" }, method = RequestMethod.POST)
-	public String saveEmployee(@Valid @ModelAttribute("employee") Employee employee, BindingResult result) {
+	public String saveEmployee(@Valid @ModelAttribute("employee") Employee employee, BindingResult result,
+			RedirectAttributes redirectAttributes) {
 		if (result.hasErrors()) {
-			return "addEmployee";
+			return VIEWS_EMPLOYEE_CREATE_FORM;
 		}
-		return "redirect:employee/list";
+		employeeService.createEmployee(employee);
+		redirectAttributes.addFlashAttribute("message",
+				messageSource.getMessage("operationMessage.employeeAddSuccess", new String[] {}, Locale.US));
+		return "redirect:/employee/list";
 	}
 
 }
