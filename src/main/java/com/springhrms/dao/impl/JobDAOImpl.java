@@ -7,11 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.springhrms.dao.JobDAO;
-import com.springhrms.model.Employee;
 import com.springhrms.model.Job;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Repository
 public class JobDAOImpl implements JobDAO {
+    
+        private static final Logger logger = LoggerFactory.getLogger(JobDAOImpl.class);
 
 	@Autowired
 	private SessionFactory sessionFactory;
@@ -37,11 +40,13 @@ public class JobDAOImpl implements JobDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Job> getAllJobs() {
+                logger.info("JobDAOImpl getAllJobs method executed");
 		return (List<Job>) sessionFactory.getCurrentSession().createQuery("from Job").list();
 	}
 
 	@Override
 	public Job getJob(String jobId) {
+                logger.info("JobDAOImpl getJob method executed");
 		return (Job) sessionFactory.getCurrentSession().get(Job.class, jobId);
 	}
 
