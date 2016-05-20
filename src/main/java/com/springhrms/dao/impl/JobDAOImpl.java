@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.springhrms.dao.JobDAO;
 import com.springhrms.model.Job;
+import org.hibernate.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,7 +42,9 @@ public class JobDAOImpl implements JobDAO {
 	@Override
 	public List<Job> getAllJobs() {
                 logger.info("JobDAOImpl getAllJobs method executed");
-		return (List<Job>) sessionFactory.getCurrentSession().createQuery("from Job").list();
+                Query allJobQuery =  sessionFactory.getCurrentSession().createQuery("from Job");
+                allJobQuery.setCacheable(true);
+		return (List<Job>) allJobQuery.list();
 	}
 
 	@Override
