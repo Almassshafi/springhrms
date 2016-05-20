@@ -2,8 +2,7 @@ package com.springhrms.service.impl;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,13 +38,13 @@ public class JobServiceImpl implements JobService {
 	}
 
 	@Override
-	@Transactional
+	@Transactional(readOnly = true)
 	public List<Job> getAllJobs() {
 		return jobDAO.getAllJobs();
 	}
 
 	@Override
-	@Transactional
+	@Transactional(readOnly = true)
 	public Job getJob(String jobId) {
 		return jobDAO.getJob(jobId);
 	}
