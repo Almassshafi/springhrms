@@ -3,7 +3,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <ul>
-	<li><a href="<c:url value='/' />">Home</a></li>
-	<li><a href="<c:url value='/employee/list' />">Employee
-			Administration</a></li>
+	<li style="padding: 5px;"><a href="<c:url value='/' />">Home</a></li>
+	<li style="padding: 5px;"><a
+		href="<c:url value='/employee/list' />">Employee Administration</a></li>
 </ul>
