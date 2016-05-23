@@ -25,6 +25,7 @@ import com.springhrms.model.Employee;
 import com.springhrms.model.Job;
 import com.springhrms.service.EmployeeService;
 import com.springhrms.service.JobService;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 @Controller
 @RequestMapping("/employee")
@@ -64,6 +65,7 @@ public class EmployeeController {
 		return mav;
 	}
 
+        @PreAuthorize("hasRole('ROLE_ADMIN')")
 	@RequestMapping(value = { "/add" }, method = RequestMethod.GET)
 	public ModelAndView createEmployee() {
 		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_CREATE_FORM);
