@@ -3,19 +3,26 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
     http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
 
-	<http auto-config="true">
-		<intercept-url pattern="/" access="permitAll" />
-		<intercept-url pattern="/employee/**" access="hasRole('ROLE_USER')" />
-		<logout logout-success-url="/logout"/>
+	<http use-expressions="true">
+		<intercept-url pattern="/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"  />
+		<form-login />
+		<logout logout-url="/logout" />
+		<remember-me />
+		<headers>
+			<cache-control />
+			<xss-protection />
+		</headers>
 	</http>
 
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>
-				<user name="manish" password="nikki123" authorities="ROLE_USER" />
+				<user name="manish" password="123" authorities="ROLE_USER" />
+				<user name="admin" password="123" authorities="ROLE_ADMIN" />
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>
 
+	<global-method-security secured-annotations="enabled" />
 
 </beans:beans>

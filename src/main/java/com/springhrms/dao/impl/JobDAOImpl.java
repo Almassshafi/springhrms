@@ -41,7 +41,7 @@ public class JobDAOImpl implements JobDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Job> getAllJobs() {
-                logger.info("JobDAOImpl getAllJobs method executed");
+//                logger.info("JobDAOImpl getAllJobs method executed");
                 Query allJobQuery =  sessionFactory.getCurrentSession().createQuery("from Job");
                 allJobQuery.setCacheable(true);
 		return (List<Job>) allJobQuery.list();
@@ -49,7 +49,7 @@ public class JobDAOImpl implements JobDAO {
 
 	@Override
 	public Job getJob(String jobId) {
-                logger.info("JobDAOImpl getJob method executed");
+//                logger.info("JobDAOImpl getJob method executed");
 		return (Job) sessionFactory.getCurrentSession().get(Job.class, jobId);
 	}
 
