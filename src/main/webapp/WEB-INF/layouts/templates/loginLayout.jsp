@@ -6,11 +6,8 @@
 <meta http-equiv="Content-Type" charset="utf-8" />
 
 <title>My Company Portal::Login</title>
-<link href="<c:url value='/resources/css/php_hol.css'  />"
-	rel="stylesheet">
 </head>
 <body>
-	<h1>My Company Portal: Login</h1>
 	<div id="content">
 		<tiles:insertAttribute name="body" />
 	</div>

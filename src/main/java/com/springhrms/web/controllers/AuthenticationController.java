@@ -8,22 +8,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class AuthenticationController {
 
-	private static final String VIEWS_AUTHENTICATION_LOGIN_FORM = "login";
+    private static final String VIEWS_AUTHENTICATION_LOGIN_FORM = "login";
 
-//	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String login(ModelMap model) {
-		return VIEWS_AUTHENTICATION_LOGIN_FORM;
-	}
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String loginPage() {
+        return VIEWS_AUTHENTICATION_LOGIN_FORM;
+    }
 
 //	@RequestMapping(value = "/loginerror", method = RequestMethod.GET)
-	public String loginerror(ModelMap model) {
-		model.addAttribute("error", "true");
-		return "loginError";
-	}
+    public String loginerror(ModelMap model) {
+        model.addAttribute("error", "true");
+        return "loginError";
+    }
 
 //	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public String logout(ModelMap model) {
-		return VIEWS_AUTHENTICATION_LOGIN_FORM;
-	}
+    public String logout(ModelMap model) {
+        return VIEWS_AUTHENTICATION_LOGIN_FORM;
+    }
 
 }
