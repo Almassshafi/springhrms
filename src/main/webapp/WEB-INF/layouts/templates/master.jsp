@@ -5,12 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" charset="utf-8" />
 
-<title>My Company Portal</title>
+<title>Spring HRMS Company Portal</title>
 <link href="<c:url value='/resources/css/php_hol.css'  />"
 	rel="stylesheet">
 </head>
 <body>
-	<h1>My Company Portal</h1>
+	<h1>Spring HRMS Company Portal</h1>
 	<div id="menu">
 		<tiles:insertAttribute name="sideNavigation" />
 	</div>

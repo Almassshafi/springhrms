@@ -23,48 +23,38 @@ import com.springhrms.service.AuthenticationService;
 @Service("authenticationService")
 public class AuthenticationServiceImpl implements AuthenticationService {
 
-    @Autowired
-    private UserDAO userDAO;
+	@Autowired
+	private UserDAO userDAO;
 
-    private static final Logger logger = LoggerFactory.getLogger(AuthenticationServiceImpl.class);
+	private static final Logger logger = LoggerFactory.getLogger(AuthenticationServiceImpl.class);
 
-    @Override
-    @Transactional
-    public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {
-        logger.info("AuthenticationServiceImpl loadUserByUsername executed");
-        com.springhrms.model.User user = userDAO.findByUserName(username);
+	@Override
+	@Transactional
+	public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {
+		logger.info("AuthenticationServiceImpl loadUserByUsername executed");
+		com.springhrms.model.User user = userDAO.findByUserName(username);
 
-        List<GrantedAuthority> authorities = buildUserAuthority(user.getUserRole());
+		List<GrantedAuthority> authorities = buildUserAuthority(user.getUserRole());
 
-        return buildUserForAuthentication(user, authorities);
+		/*
+		 * Converts com.springhrms.model.User user to
+		 * org.springframework.security.core.userdetails.User
+		 */
+		return new User(user.getUsername(), user.getPassword(), user.isEnabled(), true, true, true, authorities);
 
-    }
+	}
 
-    // Converts com.springhrms.model.User user to
-    // org.springframework.security.core.userdetails.User
-    private User buildUserForAuthentication(com.springhrms.model.User user, List<GrantedAuthority> authorities) {
-        return new User(user.getUsername(), user.getPassword(), user.isEnabled(), true, true, true, authorities);
-    }
+	private List<GrantedAuthority> buildUserAuthority(Set<UserRole> userRoles) {
 
-    private List<GrantedAuthority> buildUserAuthority(Set<UserRole> userRoles) {
+		Set<GrantedAuthority> setAuths = new HashSet<GrantedAuthority>();
 
-        Set<GrantedAuthority> setAuths = new HashSet<GrantedAuthority>();
+		// Build user's authorities
+		for (UserRole userRole : userRoles) {
+			setAuths.add(new SimpleGrantedAuthority(userRole.getRole()));
+		}
 
-        // Build user's authorities
-        for (UserRole userRole : userRoles) {
-            setAuths.add(new SimpleGrantedAuthority(userRole.getRole()));
-        }
+		List<GrantedAuthority> Result = new ArrayList<GrantedAuthority>(setAuths);
 
-        List<GrantedAuthority> Result = new ArrayList<GrantedAuthority>(setAuths);
-
-        return Result;
-    }
-
-    public UserDAO getUserDAO() {
-        return userDAO;
-    }
-
-    public void setUserDAO(UserDAO userDAO) {
-        this.userDAO = userDAO;
-    }
+		return Result;
+	}
 }
