@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:security="http://www.springframework.org/schema/security"
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -29,7 +29,7 @@
 		id="tilesConfigurer">
 		<beans:property name="definitions">
 			<beans:list>
-				<beans:value>/WEB-INF/layouts/root-layout.xml</beans:value>
+				<beans:value>/WEB-INF/layouts/root-layouts.xml</beans:value>
 				<beans:value>/WEB-INF/views/**/layout.xml</beans:value>
 			</beans:list>
 		</beans:property>
@@ -61,7 +61,5 @@
 			</beans:list>
 		</beans:property>
 	</beans:bean>
-        
-        <security:global-method-security  pre-post-annotations="disabled" />
 
 </beans:beans>

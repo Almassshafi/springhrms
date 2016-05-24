@@ -65,7 +65,6 @@ public class EmployeeController {
 		return mav;
 	}
 
-        @PreAuthorize("hasRole('ROLE_ADMIN')")
 	@RequestMapping(value = { "/add" }, method = RequestMethod.GET)
 	public ModelAndView createEmployee() {
 		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_CREATE_FORM);

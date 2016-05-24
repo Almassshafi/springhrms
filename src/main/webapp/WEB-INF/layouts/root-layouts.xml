@@ -13,4 +13,8 @@
 			value="/WEB-INF/layouts/templates/footer.jsp" />
 	</definition>
 
+	<!-- Login layout -->
+	<definition name="loginlayout"
+		template="/WEB-INF/layouts/templates/loginLayout.jsp">
+	</definition>
 </tiles-definitions>

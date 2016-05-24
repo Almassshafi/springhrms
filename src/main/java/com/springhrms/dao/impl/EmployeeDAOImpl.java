@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 
-        private static final Logger logger = LoggerFactory.getLogger(EmployeeDAOImpl.class);
+	private static final Logger logger = LoggerFactory.getLogger(EmployeeDAOImpl.class);
 
 	@Autowired
 	private SessionFactory sessionFactory;
@@ -21,34 +21,35 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Override
 	public long createEmployee(Employee employee) {
 		Long newKey = (Long) sessionFactory.getCurrentSession().save(employee);
-                logger.info("EmployeeDAOImpl createEmployee method executed");
+		logger.info("EmployeeDAOImpl createEmployee method executed");
 		return newKey.longValue();
 	}
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
 		sessionFactory.getCurrentSession().update(employee);
-                logger.info("EmployeeDAOImpl updateEmployee method executed");
+		logger.info("EmployeeDAOImpl updateEmployee method executed");
 		return employee;
 	}
 
 	@Override
 	public void deleteEmployee(long employeeId) {
-                logger.info("EmployeeDAOImpl deleteEmployee method executed");
-		sessionFactory.getCurrentSession().createQuery("DELETE FROM Employee WHERE employeeId = "+employeeId).executeUpdate();
-		
+		logger.info("EmployeeDAOImpl deleteEmployee method executed");
+		sessionFactory.getCurrentSession().createQuery("DELETE FROM Employee WHERE employeeId = " + employeeId)
+				.executeUpdate();
+
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Employee> getAllEmployees() {
-                logger.info("EmployeeDAOImpl getAllEmployees method executed");
+		logger.info("EmployeeDAOImpl getAllEmployees method executed");
 		return (List<Employee>) sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
 	}
 
 	@Override
 	public Employee getEmployee(long employeeId) {
-                logger.info("EmployeeDAOImpl getEmployee method executed");
+		logger.info("EmployeeDAOImpl getEmployee method executed");
 		return (Employee) sessionFactory.getCurrentSession().get(Employee.class, employeeId);
 	}
 

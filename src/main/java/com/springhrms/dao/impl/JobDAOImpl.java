@@ -14,8 +14,8 @@ import org.slf4j.LoggerFactory;
 
 @Repository
 public class JobDAOImpl implements JobDAO {
-    
-        private static final Logger logger = LoggerFactory.getLogger(JobDAOImpl.class);
+
+	private static final Logger logger = LoggerFactory.getLogger(JobDAOImpl.class);
 
 	@Autowired
 	private SessionFactory sessionFactory;
@@ -41,15 +41,15 @@ public class JobDAOImpl implements JobDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Job> getAllJobs() {
-//                logger.info("JobDAOImpl getAllJobs method executed");
-                Query allJobQuery =  sessionFactory.getCurrentSession().createQuery("from Job");
-                allJobQuery.setCacheable(true);
+		// logger.info("JobDAOImpl getAllJobs method executed");
+		Query allJobQuery = sessionFactory.getCurrentSession().createQuery("from Job");
+		allJobQuery.setCacheable(true);
 		return (List<Job>) allJobQuery.list();
 	}
 
 	@Override
 	public Job getJob(String jobId) {
-//                logger.info("JobDAOImpl getJob method executed");
+		// logger.info("JobDAOImpl getJob method executed");
 		return (Job) sessionFactory.getCurrentSession().get(Job.class, jobId);
 	}
 
