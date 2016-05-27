@@ -12,6 +12,7 @@ This project involves following:
   - Hibernate Second Level Cache with Ehcache.
   - Spring Security Authentication with UserDetailsService using database.
   - Spring Security Authorization with global-method-security @PreAuthorize @Secured annotations.
+  - Spring AOP for logging in service methods.
     
 
 Manish Gour.
