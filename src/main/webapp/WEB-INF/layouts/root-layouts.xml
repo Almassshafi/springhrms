@@ -4,7 +4,7 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 	<!-- Master -->
-	<definition name="masterlayout" template="/WEB-INF/layouts/templates/master.jsp">
+	<definition name="masterlayout" template="/WEB-INF/layouts/templates/masterLayout.jsp">
 		<put-attribute name="header"
 			value="/WEB-INF/layouts/templates/header.jsp" />
 		<put-attribute name="sideNavigation"
@@ -16,5 +16,10 @@
 	<!-- Login layout -->
 	<definition name="loginlayout"
 		template="/WEB-INF/layouts/templates/loginLayout.jsp">
+	</definition>
+	
+	<!-- Exception Page layout -->
+	<definition name="exceptionlayout"
+		template="/WEB-INF/layouts/templates/exceptionsLayout.jsp">
 	</definition>
 </tiles-definitions>

@@ -25,7 +25,6 @@ import com.springhrms.model.Employee;
 import com.springhrms.model.Job;
 import com.springhrms.service.EmployeeService;
 import com.springhrms.service.JobService;
-import org.springframework.security.access.prepost.PreAuthorize;
 
 @Controller
 @RequestMapping("/employee")
@@ -87,6 +86,9 @@ public class EmployeeController {
 
 	@RequestMapping(value = { "/edit/{employeeId}" }, method = RequestMethod.GET)
 	public ModelAndView editEmployee(@PathVariable Integer employeeId) {
+		if (employeeId == 0)
+			throw new IllegalArgumentException("Wrong employee Id passed!");
+
 		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_EDIT_FORM);
 		Employee employee = employeeService.getEmployee(employeeId);
 		mav.addObject("employee", employee);
