@@ -8,11 +8,12 @@ Trying to re-develop oracle example of zend 1 +oracle into spring + hibenrate ht
 This project involves following:
 
   - Spring hibernate CRUD operation.
+  - Spring exception handling using @ControllerAdvice and @ExceptionHandler
   - Transactions support.
   - Hibernate Second Level Cache with Ehcache.
   - Spring Security Authentication with UserDetailsService using database.
   - Spring Security Authorization with global-method-security @PreAuthorize @Secured annotations.
   - Spring AOP for logging in service methods.
-    
+  - Spring integration with jUnit testing.  
 
 Manish Gour.
