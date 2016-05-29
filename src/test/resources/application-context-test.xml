@@ -15,7 +15,7 @@
 
 
 	<context:property-placeholder
-		location="classpath*:META-INF/hibernate.properties" />
+		location="classpath*:META-INF/hibernate-test.properties" />
 
 	<context:component-scan base-package="com.springhrms.aspect" />
 	<context:component-scan base-package="com.springhrms.dao" />
@@ -57,8 +57,8 @@
 			ref="hibernate4AnnotatedSessionFactory" />
 	</beans:bean>
 
-<!-- 	<jdbc:initialize-database data-source="dataSource">
-		<jdbc:script location="classpath:META-INF/sql/db-test-data.sql" />
-	</jdbc:initialize-database> -->
+	<jdbc:initialize-database data-source="dataSource">
+		<jdbc:script location="classpath:META-INF/sql/db-test-data-test.sql" />
+	</jdbc:initialize-database>
 
 </beans:beans>
