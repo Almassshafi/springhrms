@@ -1,6 +1,7 @@
 package com.springhrms.dao.impl;
 
 import com.springhrms.dao.EmployeeDAO;
+import com.springhrms.exception.EmployeeNotFoundException;
 import com.springhrms.model.Employee;
 
 import java.util.List;
@@ -43,7 +44,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	public Employee getEmployee(long employeeId) {
 		Employee employee = (Employee) sessionFactory.getCurrentSession().get(Employee.class, employeeId);
 		if (employee == null)
-			throw new IllegalArgumentException("Employee not exists");
+			throw new EmployeeNotFoundException("Employee does not exists");
 
 		return employee;
 	}
