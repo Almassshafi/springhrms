@@ -41,7 +41,11 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 	@Override
 	public Employee getEmployee(long employeeId) {
-		return (Employee) sessionFactory.getCurrentSession().get(Employee.class, employeeId);
+		Employee employee = (Employee) sessionFactory.getCurrentSession().get(Employee.class, employeeId);
+		if (employee == null)
+			throw new IllegalArgumentException("Employee not exists");
+
+		return employee;
 	}
 
 }

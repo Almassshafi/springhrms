@@ -86,9 +86,6 @@ public class EmployeeController {
 
 	@RequestMapping(value = { "/edit/{employeeId}" }, method = RequestMethod.GET)
 	public ModelAndView editEmployee(@PathVariable Integer employeeId) {
-		if (employeeId == 0)
-			throw new IllegalArgumentException("Wrong employee Id passed!");
-
 		ModelAndView mav = new ModelAndView(VIEWS_EMPLOYEE_EDIT_FORM);
 		Employee employee = employeeService.getEmployee(employeeId);
 		mav.addObject("employee", employee);
