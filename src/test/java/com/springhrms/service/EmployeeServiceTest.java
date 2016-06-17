@@ -66,7 +66,16 @@ public class EmployeeServiceTest {
 		assertEquals(0l, employeeService.getAllEmployees().size());
 	}
 
+	@Test
+	@Rollback
+	public void testGetAllEmployees() {
+		Employee employee = EmployeeDataSeeders.generateEmployee();
+		employeeService.createEmployee(employee);
+		assertEquals(1l, employeeService.getAllEmployees().size());
+	}
+
 	@After
 	public void tearDown() {
+		this.employeeService = null;
 	}
 }
