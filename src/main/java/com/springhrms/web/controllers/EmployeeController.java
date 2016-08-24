@@ -25,6 +25,7 @@ import com.springhrms.model.Employee;
 import com.springhrms.model.Job;
 import com.springhrms.service.EmployeeService;
 import com.springhrms.service.JobService;
+import com.springhrms.validator.NameValidator;
 
 @Controller
 @RequestMapping("/employee")
@@ -43,12 +44,18 @@ public class EmployeeController {
 
 	@Autowired
 	private MessageSource messageSource;
-
+        
+        //This is an example of custom validator
+	@Autowired
+	private NameValidator nameValidator;
+        
+        
 	@InitBinder
 	public void initBinder(WebDataBinder webDataBinder) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		dateFormat.setLenient(false);
 		webDataBinder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+                webDataBinder.setValidator(nameValidator);
 	}
 
 	@ModelAttribute("jobs")
