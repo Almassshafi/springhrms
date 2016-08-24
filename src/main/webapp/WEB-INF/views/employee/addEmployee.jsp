@@ -53,9 +53,17 @@
 					<label for="JobId" class="required">Job Title:</label>
 				</dt>
 				<dd id="JobId-element">
-					<form:select path="job" items="${jobs}" itemValue="jobId"
+                                    <form:select id="job" path="job" items="${jobs}" itemValue="jobId"
 						itemLabel="jobTitle" />
 					<form:errors path="job" cssClass="errors" />
+				</dd>
+				<dt id="JobId-label">
+					<label for="JobId" class="required">Salary:</label>
+				</dt>
+				<dd id="JobId-element">
+                                    <form:select id="salary" path="salary"
+						itemLabel="jobTitle" />
+					<form:errors path="salary" cssClass="errors" />
 				</dd>
 				<dt id="submit-label">&#160;</dt>
 				<dd id="submit-element">

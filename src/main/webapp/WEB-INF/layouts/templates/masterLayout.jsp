@@ -8,6 +8,11 @@
 <title>Spring HRMS Company Portal</title>
 <link href="<c:url value='/resources/css/php_hol.css'  />"
 	rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.6.1.min.js"
+			  integrity="sha256-x4Q3aWDzFj3HYLwBnnLl/teCA3RaVRDGmZKjnR2P53Y="
+			  crossorigin="anonymous"></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/javascript/global.js" />"></script>
 </head>
 <body>
 	<h1>Spring HRMS Company Portal</h1>

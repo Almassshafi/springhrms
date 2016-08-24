@@ -26,6 +26,9 @@ import com.springhrms.model.Job;
 import com.springhrms.service.EmployeeService;
 import com.springhrms.service.JobService;
 import com.springhrms.validator.NameValidator;
+import java.util.ArrayList;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/employee")
@@ -134,5 +137,14 @@ public class EmployeeController {
 		}
 		return "redirect:/employee/list";
 	}
+
+        @RequestMapping(value = "/getSalary", method = RequestMethod.GET)
+        public @ResponseBody List<String> salariesForJob(@RequestParam(value = "jobName", required = true) String jobName) {
+                List<String> salaries = new ArrayList<String>();
+                Job salariesList = this.jobService.getJob(jobName);
+                salaries.add(Double.toString(salariesList.getMaxSalary()));
+                salaries.add(Double.toString(salariesList.getMinSalary()));
+                return  salaries;
+        }
 
 }
